@@ -1,7 +1,7 @@
 #!/usr/bin/env r
 
 # Export plots to a pdf file
-pdf("revised_r.pdf")
+#pdf("revised_r.pdf")
 
 # Initializing variables and vectors to be used later
 n <- 10000
@@ -15,6 +15,7 @@ t_var <- c()
 dist <- c()
 running_mean <- c()
 
+par(mfrow=c(7, 7))
 # Every alpha in v 
 for (alpha in v)
 {
@@ -104,4 +105,4 @@ for (alpha in v)
   }
 }
 
-dev.off()
+#dev.off()
